@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+import sys
+
+
 def fib(n):
     """
     Imprime os n primeiros números de Fibonacci.
@@ -7,5 +11,9 @@ def fib(n):
     for i in range(n):
         print(x)
         x, y = y, x + y
+
      
+if __name__ == '__main__':
+    n = int(sys.argv[-1])
+    fib(n)        
    
